@@ -1,0 +1,240 @@
+
+@import 'mixins.pcss';
+
+@mixin breakpoint mobile, min {
+  :global(.lt-mobile) {
+    display: none !important;
+  }
+}
+
+@mixin breakpoint mobile {
+  :global(.gt-mobile) {
+    display: none !important;
+  }
+}
+
+@mixin breakpoint minitab {
+  :global(.gt-minitab) {
+    display: none !important;
+  }
+}
+
+:global(.grow) {
+  flex-grow: 1;
+  display: flex;
+}
+
+:global(.center) {
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--app-font);
+  text-align: left;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    &:focus {
+        outline: rgba(159,159,158,0.5) solid 3px;
+        z-index: 1;
+    }
+}
+
+:root {
+  background-color: var(--background);
+  font-size: 16px;
+  --panel-padding: 24px;
+}
+
+:global(#root) {
+  background-color: var(--background);
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--foreground);
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+li {
+  margin: 4px 0;
+}
+
+button, input, :input {
+  font-family: var(--app-font);
+}
+
+button, :global(.btn) {
+  font-weight: 700;
+  margin: 0 4px 4px 0;
+  padding: 8px;
+  background-color: var(--white);
+  border: none;
+  display: inline-block;
+  transition: 0.25s;
+  color: var(--grey-90);
+  font-size: 0.8rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--grey-30);
+  }
+
+  &:active {
+    color: var(--white);
+    background-color: var(--grey-80);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,.5);
+  }
+}
+
+label, input {
+  font-weight: 700;
+  font-size: 11px;
+}
+
+a {
+  font-weight: 700;
+  font-size: 11px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.25s;
+}
+
+/* Hiding default slider styles */
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+      
+    &::-webkit-slider-runnable-track {
+      background: var(--grey-30);
+    }
+    
+    &::-ms-fill-lower {
+      background: var(--grey-30);
+    }
+    &::-ms-fill-upper {
+      background: var(--grey-30);
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: var(--grey-60);
+    cursor: grab;
+    margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    &:hover {
+        background: var(--grey-50);
+    }
+    &:active {
+        background: var(--grey-80);
+        cursor: grabbing;
+    }
+  }
+  &::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: var(--grey-60);
+    cursor: grab;
+    &:hover {
+        background: var(--grey-50);
+    }
+    &:active {
+        background: var(--grey-80);
+        cursor: grabbing;
+    }
+  }
+  &::-ms-thumb {
+      height: 16px;
+      width: 16px;
+      border-radius: 8px;
+      background: var(--grey-60);
+      cursor: grab;
+      &:hover {
+          background: var(--grey-50);
+      }
+      &:active {
+          background: var(--grey-80);
+          cursor: grabbing;
+      }
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--grey-20);
+    border-radius: 2px;
+  }
+  &::-moz-range-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: var(--grey-20);
+      border-radius: 2px;
+  }
+  &::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 8px 0;
+    color: transparent;
+  }
+  &::-ms-fill-lower {
+    background: var(--grey-20);
+    border-radius: 4px;
+  }
+  &::-ms-fill-upper {
+      background: var(--grey-20);
+      border-radius: 4px;
+  }
+}
+
+:global(.pcr-app) {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s, opacity 0.3s, visibility 0s 0.3s !important;
+
+  &:global(.visible) {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s, opacity 0.3s !important;
+  }
+}

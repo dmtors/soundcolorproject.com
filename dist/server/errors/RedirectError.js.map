@@ -1,0 +1,1 @@
+{"version":3,"file":"RedirectError.js","sourceRoot":"","sources":["../../../server/errors/RedirectError.ts"],"names":[],"mappings":";;;AACA,kEAA8D;AAE9D,+CAA2C;AAE3C,MAAa,aAAc,SAAQ,yBAAmC;IACpE,YACkB,UAAkB,EAClC,aAAsB,EACtB,SAAS,GAAG,iCAAe,CAAC,WAAW;QAEvC,KAAK,CACH,SAAS,EACT,aAAa,EACb,EAAE,UAAU,EAAE,EACd,GAAG,CACJ,CAAA;QATe,eAAU,GAAV,UAAU,CAAQ;IAUpC,CAAC;CACF;AAbD,sCAaC"}

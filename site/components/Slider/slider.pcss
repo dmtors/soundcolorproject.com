@@ -1,0 +1,36 @@
+
+.slider-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  font-size: 12px;
+  padding: 4px 16px;
+
+  .slider-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* cursor: ew-resize; */
+    font-weight: 600;
+
+    .slider-value {
+      font-weight: 700;
+      /* cursor: text; */
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .slider-input {
+    cursor: grab;
+    height: 16px;
+    margin-top: 4px;
+
+    :active {
+      cursor: grabbing;
+    }
+  }
+}

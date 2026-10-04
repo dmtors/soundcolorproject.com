@@ -1,0 +1,1 @@
+{"version":3,"file":"InvalidOauthCallbackError.js","sourceRoot":"","sources":["../../../server/errors/InvalidOauthCallbackError.ts"],"names":[],"mappings":";;;AACA,kEAA8D;AAE9D,+CAA2C;AAE3C,MAAa,yBAA0B,SAAQ,yBAAW;IACxD;QACE,KAAK,CACH,iCAAe,CAAC,sBAAsB,EACtC,kCAAkC,CACnC,CAAA;IACH,CAAC;CACF;AAPD,8DAOC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"CannotStringifyError.js","sourceRoot":"","sources":["../../../server/errors/CannotStringifyError.ts"],"names":[],"mappings":";;;AACA,MAAa,oBAAqB,SAAQ,KAAK;IAC7C,YAAa,IAAY;QACvB,KAAK,CAAC,yBAAyB,IAAI,0CAA0C,CAAC,CAAA;IAChF,CAAC;CACF;AAJD,oDAIC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"EmailFailedToSendError.js","sourceRoot":"","sources":["../../../server/errors/EmailFailedToSendError.ts"],"names":[],"mappings":";;;AACA,kEAA8D;AAE9D,+CAA2C;AAE3C,MAAa,sBAAuB,SAAQ,yBAAkB;IAC5D,YAAa,KAAY;QACvB,KAAK,CAAC,iCAAe,CAAC,oBAAoB,EAAE,sBAAsB,EAAE,KAAK,CAAC,CAAA;IAC5E,CAAC;CACF;AAJD,wDAIC"}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+  "baseUrl": "http://localhost:${PORT}",
+  "numTestsKeptInMemory": 1,
+  "reporter": "mochawesome",
+  "video": false,
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}

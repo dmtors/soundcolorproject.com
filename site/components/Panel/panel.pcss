@@ -1,0 +1,58 @@
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  color: var(--black);
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+
+  .panel-title {
+    display: flex;
+    flex-direction: row;
+    margin: 14px 16px;
+    line-height: 20px;
+
+    .title-text {
+      flex: 1;
+    }
+
+    .title-button {
+      margin: -6px -8px;
+      margin-left: 8px;
+    }
+  }
+
+  .panel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--grey-50) var(--grey-10);
+
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      overflow: visible;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--grey-10);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--grey-50);
+      cursor: ns-resize;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--grey-70);
+    }
+  }
+}

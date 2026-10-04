@@ -1,0 +1,35 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "ordered-imports": {
+      "severity": "error",
+      "options": {
+        "grouped-imports": true
+      }
+    },
+    "deprecation": {
+      "severity": "warn"
+    },
+    "trailing-comma": {
+      "options": [{
+          "multiline": {
+              "arrays": "always",
+              "objects": "always",
+              "functions": "always",
+              "imports": "always",
+              "exports": "always",
+              "typeLiterals": "never"
+          },
+          "singleline": "never"
+      }],
+      "severity": "default"
+    },
+    "no-console": true
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules"
+    ]
+  }
+}
+

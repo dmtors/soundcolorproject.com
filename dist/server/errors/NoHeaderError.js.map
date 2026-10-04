@@ -1,0 +1,1 @@
+{"version":3,"file":"NoHeaderError.js","sourceRoot":"","sources":["../../../server/errors/NoHeaderError.ts"],"names":[],"mappings":";;;AACA,kEAA8D;AAE9D,+CAA2C;AAE3C,MAAa,aAAc,SAAQ,yBAAmC;IACpE,YACkB,UAAkB;QAElC,KAAK,CACH,iCAAe,CAAC,eAAe,EAC/B,8BAA8B,UAAU,GAAG,EAC3C,EAAE,UAAU,EAAE,EACd,GAAG,CACJ,CAAA;QAPe,eAAU,GAAV,UAAU,CAAQ;IAQpC,CAAC;CACF;AAXD,sCAWC"}

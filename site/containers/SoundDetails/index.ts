@@ -1,0 +1,2 @@
+
+export { SoundDetails } from './SoundDetails'

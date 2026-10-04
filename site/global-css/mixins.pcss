@@ -1,0 +1,20 @@
+
+$directionMap: (
+  max: 0,
+  min: 1
+);
+
+$breakpointMap: (
+  mobile: 480,
+  minitab: 599,
+  tablet: 768,
+  laptop: 1024
+);
+
+@define-mixin breakpoint $name: mobile, $direction: max {
+  @media only screen and ($(direction)-width: calc(mapGet($breakpointMap, $name)px + mapGet($directionMap, $direction)px)) {
+    @mixin-content;
+  }
+}
+
+@define-mixin
